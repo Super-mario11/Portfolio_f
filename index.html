@@ -4,108 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashish Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Cursor Shadow -->
+  <header>
+    <nav>
+      <a href="#hero">Ashish.dev</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
   <div class="cursor-shadow"></div>
 
-  <!-- Hero Section -->
-  <section id="hero" class="card">
-    <h1>Ashish Kumar</h1>
-    <p class="tagline">Web Developer</p>
+  <section id="hero" class="card fade-in">
+    <p class="greeting color-accent">Hi, my name is</p>
+    <h1 class="hero-name">Ashish Kumar.</h1>
+    <p class="tagline">I build things for the web. <span class="color-accent">💻</span></p>
+    <p class="hero-summary">I’m a passionate Web Developer specializing in building modern, responsive, and user-friendly websites and applications. Currently, I'm focused on developing full-stack projects with React.</p>
   </section>
 
-  <!-- About Section -->
-<section id="about" class="card">
-  <h2>About Me</h2>
+  <section id="about" class="card reveal-from-bottom">
+  <h2><span class="color-accent">01.</span> About Me</h2>
   <div class="about-container">
     <img src="images/profile.jpg" alt="Ashish Kumar" class="profile-pic">
     <div class="about-text">
       <p>Hello! I’m Ashish Kumar, a passionate Web Developer dedicated to building modern, responsive, and user-friendly websites.</p>
+      <p>My journey in web development started with a curiosity about how digital experiences come to life. Today, I primarily work with:</p>
+      <ul class="simple-list">
+        <li>⚡ HTML & CSS (SASS)</li>
+        <li>💡 JavaScript (ES6+)</li>
+        <li>⚛️ React & Redux</li>
+        <li>⚙️ Node.js & Express</li>
+      </ul>
     </div>
   </div>
 </section>
 
-
-  <!-- Hobbies Section -->
-  <section id="hobbies" class="card">
-    <h2>Hobbies</h2>
-    <ul class="modern-list">
-      <li>⚡ Coding Challenges</li>
-      <li>🎮 Gaming</li>
-      <li>📚 Reading Tech Blogs</li>
-      <li>✈️ Traveling</li>
-    </ul>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-    <div class="skill-bar">
-      <span>HTML</span>
-      <div class="bar"><div class="fill html"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>CSS</span>
-      <div class="bar"><div class="fill css"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>JavaScript</span>
-      <div class="bar"><div class="fill js"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>React</span>
-      <div class="bar"><div class="fill react"></div></div>
+  <section id="skills" class="card reveal-from-bottom">
+    <h2><span class="color-accent">02.</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-tile">HTML</div>
+      <div class="skill-tile">CSS</div>
+      <div class="skill-tile">JavaScript</div>
+      <div class="skill-tile">React</div>
+      <div class="skill-tile">Node.js</div>
+      <div class="skill-tile">Git</div>
+      <div class="skill-tile">SQL</div>
+      <div class="skill-tile">Figma</div>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="card">
-    <h2>Achievements</h2>
-    <ul class="modern-list">
-      <li>🏆 Built 10+ responsive projects</li>
-      <li>🎖️ Completed advanced web dev bootcamp</li>
-      <li>💼 Freelance web developer for startups</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="card">
-    <h2>Projects</h2>
+  <section id="projects" class="card reveal-from-bottom">
+    <h2><span class="color-accent">03.</span> Projects</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A sleek and responsive personal portfolio.</p>
+      <div class="project-card reveal-from-left">
+        <h3>Portfolio Website <span class="color-accent">↗</span></h3>
+        <p>A sleek and responsive personal portfolio built with modern CSS and a focus on accessibility.</p>
+        <p class="tech-stack">HTML, CSS (Grid/Flexbox), JavaScript</p>
       </div>
-      <div class="project-card">
-        <h3>Expense Tracker</h3>
-        <p>A Flutter app for managing expenses.</p>
+      <div class="project-card reveal-from-right">
+        <h3>Expense Tracker <span class="color-accent">↗</span></h3>
+        <p>A Flutter app for managing personal expenses with real-time data synchronization and visualization.</p>
+        <p class="tech-stack">Flutter, Dart, Firebase</p>
       </div>
-      <div class="project-card">
-        <h3>Taxi Booking App</h3>
-        <p>A Kotlin app with interactive UI.</p>
+      <div class="project-card reveal-from-left">
+        <h3>Plagiarism Checker <span class="color-accent">↗</span></h3>
+        <p>An AI-powered plagiarism detection tool for academic and content writing, utilizing NLP techniques.</p>
+        <p class="tech-stack">Python, Flask, NLP, PostgreSQL</p>
       </div>
-      <div class="project-card">
-        <h3>Plagiarism Checker</h3>
-        <p>AI-powered plagiarism detection tool.</p>
+      <div class="project-card reveal-from-right">
+        <h3>Taxi Booking App <span class="color-accent">↗</span></h3>
+        <p>A Kotlin app prototype featuring an interactive map UI, real-time tracking, and secure payment integration.</p>
+        <p class="tech-stack">Kotlin, Android Studio, Google Maps API</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ashish@example.com">ashish@example.com</a></p>
-    <p>
-      Connect:
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
-    </p>
+  <section id="contact" class="card text-center reveal-from-bottom">
+    <h2><span class="color-accent">04.</span> Get In Touch</h2>
+    <p class="contact-pitch">I'm currently open to new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+    <a href="mailto:ashish@example.com" class="btn-primary">Say Hello</a>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a> | 
+      <a href="#" target="_blank">GitHub</a> | 
+      <a href="#" target="_blank">Twitter</a>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="card">
-    <p>© 2025 Ashish Kumar. All rights reserved.</p>
+  <footer>
+    <p>Designed & Built by Ashish Kumar</p>
   </footer>
 
   <script src="script.js"></script>
